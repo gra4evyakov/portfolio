@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6c18f9902c.js" crossorigin="anonymous"></script>
+    <title>Personal Portfolio</title>
+</head>
+<body>
+<!-- --------------home---------------- -->
+
+    <header class="header" id="home">
+        <div class="container">
+            <nav class="nav">
+                <a href="">
+                    <img width="250px" src="assets/logo.svg" alt="">
+                </a>
+                <ul class="menu">
+                    <!-- <li class="menu__item"><a href="#home" class="menu__item-link">Home</a></li> -->
+                    <li class="menu__item"><a href="#about" class="menu__item-link">About</a></li>
+                    <!-- <li class="menu__item"><a href="#services" class="menu__item-link">Services</a></li> -->
+                    <li class="menu__item"><a href="#works" class="menu__item-link">Portfolio</a></li>
+                    <li class="menu__item"><a href="#contact" class="menu__item-link">Contact</a></li>
+                    <button><i class="fa-solid fa-xmark" onclick="closeMenu()"></i></button>
+                </ul>
+                <button><i class="fa-solid fa-bars" onclick="openMenu()"></i></button>
+            </nav>
+            <div class="header-text">
+                <p>Front-end Developer</p>
+                <h1>Hi, I'm <span>Yakov Grachev</span><br> From St. Petersburg</h1>
+            </div>
+        </div>
+    </header>
+    <!-- ----------about------------ -->
+    <main>
+        <section class="about" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="assets/user.jpg" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="subtitle">About Me</h1>
+                        <p>Hi, my name is Yakov. I am a frontend developer. On my website you can get acquainted with my latest projects and contact me. See you again on the other side of the network cable.</p>
+
+                        <div class="tab-title">
+                            <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                            <p class="tab-links" onclick="openTab('hobby')">Hobby</p>
+                            <p class="tab-links" onclick="openTab('social')">Social</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <div class="skills-tab">
+                                <ul>
+                                    <h3>Hard Skills</h3>
+                                    <li class="tab-contents-item">HTML, CSS, Tailwind</li>
+                                    <li class="tab-contents-item">JavaScript, TypeScript</li>
+                                    <li class="tab-contents-item">React, Redux, Next</li>
+                                    <li class="tab-contents-item">REST API, Git, Firebase</li>
+                                    <li class="tab-contents-item">Webpack, Rollup</li>
+                                </ul>
+                                <ul>
+                                    <h3>Soft Skills</h3>
+                                    <li class="tab-contents-item">Adaptability</li>
+                                    <li class="tab-contents-item">Self-management</li>
+                                    <li class="tab-contents-item">Teamwork</li>
+                                    <li class="tab-contents-item">Self-study</li>
+                                    <li class="tab-contents-item">Creativity</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-contents" id="hobby">
+                            <ul>
+                                <li class="tab-contents-item">Guitar player</li>
+                                <li class="tab-contents-item">Youtube channel with my music covers</li>
+                                <li class="tab-contents-item">Video editing</li>
+                                <li class="tab-contents-item">Web standards podcasts</li>
+                                <li class="tab-contents-item">Cooking</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="social">
+                            <ul>
+                                <li class="tab-contents-item"><a href="https://t.me/grachevyakov"><i class="fa-brands fa-telegram"></i>Telegram</a></li>
+                                <li class="tab-contents-item"><a href="https://www.instagram.com/yakov.grachev/"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                                <li class="tab-contents-item"><a href="https://github.com/gra4evyakov"><i class="fa-brands fa-github"></i>Github</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- -----------services---------- -->
+
+    <!-- <section class="services" id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni dignissimos magnam rem optio! Saepe accusamus obcaecati asperiores architecto possimus fuga!</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni dignissimos magnam rem optio! Saepe accusamus obcaecati asperiores architecto possimus fuga!</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni dignissimos magnam rem optio! Saepe accusamus obcaecati asperiores architecto possimus fuga!</p>
+                    <a href="">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- ----------portfolio-----------   -->
+    <section class="portfolio" id="works">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="assets/project1.jpg" alt="">
+                        <div class="layout"></div>
+                        <div class="layer">
+                            <h3>Weather App</h3>
+                            <p>Find out the weather forecast for the moment in a beautiful application. The site is written using React JavaScript library, Openweathermap API, Geoapify (geolocation).</p>
+                            <a href="https://gra4evyakov.github.io/weather-react/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                            <img src="assets/project2.jpg" alt="">
+                            <div class="layout"></div>
+                        <div class="layer">
+                            <h3>Best Eats</h3>
+                            <p>An example of a functional food delivery site. The site is written using React JavaScript library, Tailwinds CSS.</p>
+                            <a href="https://gra4evyakov.github.io/best-eats-react/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="assets/project4.jpg" alt="">
+                        <div class="layout"></div>
+                        <div class="layer">
+                            <h3>Space Travel</h3>
+                            <p>Space travel is no longer the future The site is written using the React JavaScript library, functional components, React Routes.</p>
+                            <a href="https://gra4evyakov.github.io/space-travel/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a class="btn" href="https://github.com/gra4evyakov?tab=repositories">See more on GitHub</a>
+        </div>
+    </section>
+    
+    <!-- ------------contact------------ -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <a href="email:gra4evyakov@yandex.ru"><i class="fa-solid fa-envelope"></i> gra4evyakov@yandex.ru</a>
+                    <a href="tel:79873716685"><i class="fa-solid fa-phone"></i> +7(987)371-66-85</a>
+                    <a href="./assets/logo.png" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://sheetdb.io/api/v1/ry78oldca0bs1" method="POST" id="sheetdb-form">
+                        <input type="text" name="data[name]" placeholder="Your Name" required>
+                        <input type="email" name="data[email]" placeholder="Your Email" required>
+                        <textarea name="data[message]" rows="6" placeholder="Your Message" style="resize: none"></textarea>
+                        <button class="btn btn2" type="submit">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>Copyright &copy; Yakov. Made with <i class="fa-solid fa-heart"></i> for my employers</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
